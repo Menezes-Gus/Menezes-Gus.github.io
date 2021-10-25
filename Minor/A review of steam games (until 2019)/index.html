@@ -7,11 +7,12 @@
     <title>Index</title>
 
     <style>
-        body{
+                body{
             background-color: #34495e;
             margin:0%;
             padding: 0%;
-            font-family : 'Miriam Libre'
+            font-family : 'Miriam Libre';
+            overflow: hidden;
         }
         
         .grid-container {
@@ -26,7 +27,6 @@
             height: 100vh;
             color: #2c3e50;
             padding: 1%;
-            padding-right: 0.5%;
             margin:0;
         }
         .grid2 {
@@ -34,7 +34,6 @@
             height: 100vh;
             color: #ecf0f1;
             padding: 1%;
-            padding-left: 0.5%;
             margin:0;
         }
         .en{
@@ -58,9 +57,144 @@
             }
         }
 
+        @keyframes direitaAni {
+            from{
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes esquerdaAni {
+            from{
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
         #modal.animar {
             animation-name: animacao;
             animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        h1.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        h2.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        h3.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h4.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h5.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h6.direita {
+            animation-name: direitaAni;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        h1.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h2.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        h3.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h4.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h5.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+        h6.esquerda {
+            animation-name: esquerdaAni;
+            animation-duration: 0.7s;
             animation-fill-mode: forwards;
             animation-timing-function: ease;
             animation-delay: 0s;
@@ -77,8 +211,8 @@
             <br>
             <br>
             <h2 class="direita">Uma análise sobre jogos da steam (até 2019)</h2>
-            <h4 class="direita"><a class="pt" href="https://bhscjhdvds.github.io/Minor/Uma%20an%C3%A1lise%20sobre%20jogos%20da%20steam%20(at%C3%A9%202019).html">Análise Exploratória</a></h4>
-            <h4 class="direita"><a class="pt" href="https://bhscjhdvds.github.io/Minor/Regress%C3%B5es.html">Regressões</a></h4>
+            <h4 class="direita"><a class="pt" href="https://menezes-gus.github.io/Minor/Uma%20an%C3%A1lise%20sobre%20jogos%20da%20steam%20(at%C3%A9%202019).html">Análise Exploratória</a></h4>
+            <h4 class="direita"><a class="pt" href="https://menezes-gus.github.io/Minor/Regress%C3%B5es.html">Regressões</a></h4>
             <h6 class="direita"></h6>
         </div>
         
@@ -87,10 +221,10 @@
             <p><a class="en" href="https://www.linkedin.com/in/gustavo-menezes-263b00156/">LinkedIn</a> <a class="en" href="https://github.com/Menezes-Gus">GitHub</a></p>
             <br>
             <br>
-            <h2 class="">A review of steam games (until 2019)</h2>
-            <h4 class=""><a class="pt" href="https://bhscjhdvds.github.io/Minor/Uma%20an%C3%A1lise%20sobre%20jogos%20da%20steam%20(at%C3%A9%202019).html">Exploratory Analysis</a></h4>
-            <h4 class=""><a class="pt" href="https://bhscjhdvds.github.io/Minor/Regress%C3%B5es.html">Regressions</a></h4>
-            <h6></h6>
+            <h2 class="esquerda">A review of steam games (until 2019)</h2>
+            <h4 class="esquerda"><a class="en" href="https://menezes-gus.github.io/Minor/Uma%20an%C3%A1lise%20sobre%20jogos%20da%20steam%20(at%C3%A9%202019).html">Exploratory Analysis</a></h4>
+            <h4 class="esquerda"><a class="en" href="https://menezes-gus.github.io/Minor/Regress%C3%B5es.html">Regressions</a></h4>
+            <h6 class="esquerda"></h6>
         </div> 
 </body>
 </html>
